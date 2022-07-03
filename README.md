@@ -1,2 +1,2 @@
 # tik-tok-clone
-Tik Tok Clone using Typescript MERN
+Tik Tok Clone using Typescript Next.js
