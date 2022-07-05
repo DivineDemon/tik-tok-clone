@@ -4,11 +4,11 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { AiFillHome, AiOutlineMenu } from "react-icons/ai";
 import { ImCancelCircle } from "react-icons/im";
-import GoogleLogin from "react-google-login";
+import { GoogleLogin } from '@react-oauth/google';
 
-import Discover from './Discover';
-import SuggestedAccounts from './SuggestedAccounts';
-import Footer from './Footer';
+import Discover from "./Discover";
+import SuggestedAccounts from "./SuggestedAccounts";
+import Footer from "./Footer";
 
 const Sidebar = () => {
   const [showSidebar, setShowSidebar] = useState(true);
