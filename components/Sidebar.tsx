@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { AiFillHome, AiOutlineMenu } from "react-icons/ai";
 import { ImCancelCircle } from "react-icons/im";
-import { GoogleLogin } from '@react-oauth/google';
 
 import Discover from "./Discover";
 import SuggestedAccounts from "./SuggestedAccounts";
@@ -37,30 +36,6 @@ const Sidebar = () => {
               </div>
             </Link>
           </div>
-          {!userProfile && (
-            <div className="px-2 py-4 hidden xl:block">
-              <p className="text-gray-400">
-                Login to Like and Comment on Videos!
-              </p>
-              <div className="pr-4">
-                <GoogleLogin
-                  clientId=""
-                  render={(renderProps) => (
-                    <button
-                      className="cursor-pointer bg-white text-lg text-[#F51997] border-[1px] border-[#F51997] font-semibold px-6 py-3 rounded-md outline-none w-full mt-3 hover:text-white hover:bg-[#F51997]"
-                      onClick={renderProps.onClick}
-                      disabled={renderProps.disabled}
-                    >
-                      Login
-                    </button>
-                  )}
-                  onSuccess={() => {}}
-                  onFailure={() => {}}
-                  cookiePolicy="single_host_origin"
-                />
-              </div>
-            </div>
-          )}
           <Discover />
           <SuggestedAccounts />
           <Footer />
