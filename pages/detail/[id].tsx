@@ -8,7 +8,7 @@ import { BsFillPlayFill } from "react-icons/bs";
 import { HiVolumeUp, HiVolumeOff } from "react-icons/hi";
 import axios from "axios";
 
-import { BASE_URL } from './../../utils/index';
+import { BASE_URL } from './../../utils';
 
 const Detail = () => {
   return <div>Detail</div>;

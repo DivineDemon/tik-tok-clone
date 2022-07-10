@@ -4,7 +4,7 @@ import axios from "axios";
 import { Video } from "../types";
 import VideoCard from "../components/VideoCard";
 import NoResults from "./../components/NoResults";
-import { BASE_URL } from "./../utils/index";
+import { BASE_URL } from "./../utils";
 
 interface IProps {
   videos: Video[];
