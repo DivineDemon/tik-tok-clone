@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { uuid } from "uuidv4";
+import { v4 as uuid } from "uuid";
 import { client } from "../../utils/client";
 
 export default async function handler(
